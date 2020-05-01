@@ -314,6 +314,10 @@ nav ul li a:hover {
     width: 50%;
   }
 
+  p.subhead {
+    margin-bottom: 7%;
+  }
+
   .container {
     width: 80%;
     margin: 0 auto;
@@ -351,12 +355,43 @@ nav ul li a:hover {
   nav ul li a:hover {
     background-color: inherit;
   }
+
+  /* ANIMATION  */
+  .scroll {
+    width: 30px;
+    animation: move 1s infinite alternate;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .server {
     width: 40%;
     margin: 5em auto 4em 15%;
+  }
+
+  p.subhead {
+    margin-bottom: 16%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .scroll {
+    width: 34px;
+  }
+
+  section {
+    margin-bottom: 14%;
   }
 
   .container {
