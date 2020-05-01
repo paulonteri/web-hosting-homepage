@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* DISPLAY MOBILE & DESKTOP */
+.hide-mobile {
+  display: none;
+}
+
+p,
+blockquote {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* remove bullet points  */
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-weight: bold;
+  color: #00c2ff;
+}
+
+h2 {
+  margin-top: 7%;
+}
+
+h1,
+.subhead {
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  text-align: center;
+  padding: 0.8em 1.2em;
+}
+
+.logo {
+  width: 130px;
+}
+
+/* menu icon */
+.menu {
+  width: 25px;
+  margin-top: 45%;
+}
+
+.server {
+  width: 70%;
+  margin: 2em auto 2em 25%;
+}
+
+.subhead {
+  font-size: 1.1em;
+}
+
+/* BLUE CONTAINER */
+.blue-container {
+  width: 100%;
+  background-color: #00c2ff;
+  color: white;
+  margin-top: 15%;
+  padding: 4em 0 2em;
+  /* curvature on the top left of the container*/
+  border-top-left-radius: 40px;
+  /* skew angle on top */
+  transform: skewY(-2deg);
+}
+
+.blue-container ul {
+  /* undo skew on text & icons */
+  transform: skewY(2deg);
+}
+
+/* curve on the top right of .blue-container */
+.blue-container:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #00c2ff;
+  position: absolute;
+  top: -39px;
+  right: 0;
+  z-index: -2;
+}
+.blue-container:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  top: -80px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.blue-container ul li {
+  margin-bottom: 3em;
+}
+
+.blue-container ul li p {
+  padding: 0 0.5em;
+}
+
+.blue-container img {
+  width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img {
+  /* size of third image in the ul */
+  width: 8%;
+}
+
+/* GRAY CONTAINER */
+.gray-container {
+  background-color: #f6f6f6;
+  padding: 4em 0 2em;
+  margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+  margin-bottom: 2em;
+}
+
+/* CALL TO ACTION */
+.cta {
+  background: #00cc80;
+  width: calc(100% -1em);
+  display: block;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 3% auto 7%;
+  position: relative;
+  z-index: 4;
+}
+
+/* FOOTER */
+.footer-container {
+  width: 100%;
+  background: #3d444a;
+  color: #fff;
+  padding: 3em 0;
+  border-top-right-radius: 40px;
+  transform: skewY(2deg);
+}
+
+.footer-container .container {
+  transform: skewY(-2deg);
+}
+
+.footer-container:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #3d444a;
+  position: absolute;
+  top: -39px;
+  left: 0;
+  z-index: -2;
+}
+
+.footer-container:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  top: -80px;
+  left: 0;
+  border-radius: 50%;
+}
+
+ul.footer-links {
+  margin: 0 auto;
+}
+
+ul.footer-links li {
+  display: inline-block;
+}
+
+ul.footer-links li a {
+  color: #9d9d9d;
+  font-size: 0.8em;
+}
